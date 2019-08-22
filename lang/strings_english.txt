@@ -1,0 +1,6 @@
+<?php
+$s_plugin_SafeAnon_title = 'Safe Anon';
+$s_plugin_SafeAnon_description = 'Prevent anonymous users from posting URLs in public notes.';
+
+$s_plugin_SafeAnon_error_spam_url_detected = 'URLs are not allowed in public notes from anonymous users. Please log in or mark the note as private if you need to post a URL.';
+?>
