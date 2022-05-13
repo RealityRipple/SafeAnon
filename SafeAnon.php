@@ -77,7 +77,7 @@ class SafeAnonPlugin extends MantisPlugin {
      $t_count++;
     }
    }
-   if ( $t_count > 3 || $t_count >= count($t_msg_arr) - 1 ) {
+   if ( $t_count > 2 || $t_count >= count($t_msg_arr) - 1 ) {
     $t_limit = true;
    }
   }
