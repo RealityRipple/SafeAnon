@@ -71,7 +71,7 @@ class SafeAnonPlugin extends MantisPlugin {
    $t_limit = true;
   } else if ( strpos($p_bugnote_text, ' ') !== false ) {
    $t_count = 0;
-   $t_msg_arr = explode(' ', $p_bugnote_text);
+   $t_msg_arr = preg_split("/[\s,\.]+/", $p_bugnote_text, -1, PREG_SPLIT_NO_EMPTY);
    foreach ( $t_msg_arr as $t_word ) {
     if ( substr(trim($t_word), 0, 4) === 'http' ) {
      $t_count++;
